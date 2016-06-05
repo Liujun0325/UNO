@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfdfd">
+
+    <Button
+        android:id="@+id/button_singlePlay_cancel"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:text="取消"/>
+
+    <Button
+        android:id="@+id/button_singlePlay_sure"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/button_singlePlay_cancel"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:text="确定"/>
+
+    <ImageView
+        android:id="@+id/imageView_headPor"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/logo"/>
+
+    <com.example.huangzihong.uno.ListViewCards
+        android:background="#ff0000"
+        android:id="@+id/horizon_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="93dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@id/imageView_headPor"
+        android:layout_toLeftOf="@id/button_singlePlay_sure"
+        android:layout_alignParentBottom="true"/>
+
+
+    <TextView
+        android:id="@+id/textView_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
